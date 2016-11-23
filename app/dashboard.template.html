@@ -1,0 +1,27 @@
+<!--Header component-->
+<header class="header">
+    <div class='overlay'>
+        <div class='logo'>
+            <h1>{{title}}</h1>
+        </div>
+    </div>
+</header>
+
+<!--Menu filters-->
+<div class="tab-filter-wrapper">
+    <div class="tab-filter">
+        <div class="filter-content">
+            <!--Your components should be display inside here!! -->
+            
+        </div>
+    </div>
+</div>
+<!--List of sections-->
+<section class="gallery">
+    <ul>
+      <a href="section.name" class="section" ngFor="let section of sections">
+          <img src="section.cover"/>
+          <div class="section_name">{{section.name}}</div>
+      </a> 
+    </ul>
+</section>
