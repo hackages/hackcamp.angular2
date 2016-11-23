@@ -1,7 +1,7 @@
 import { Section } from '../types/section';
 const images = 'assets/img';
 
-const sections: Section [] = [
+export const sections: Section [] = [
   { name: 'Books', cover: `${images}/books.png` },
   { name: 'Computers', cover: `${images}/computers.png` },
   { name: 'Photos', cover: `${images}/photos.png` },

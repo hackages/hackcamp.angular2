@@ -1,0 +1,12 @@
+<!--Header component-->
+<bs-header [appTitle]="title"></bs-header>
+
+
+<main class="main-content">
+    <!--Menu filters-->
+    <bs-menubar></bs-menubar>
+
+    <!--List of sections-->
+    <bs-section [dataSource]="sections | async"></bs-section>
+</main>
+
