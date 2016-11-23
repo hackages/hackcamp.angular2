@@ -2,10 +2,9 @@
   "name": "starter",
   "version": "1.0.0",
   "scripts": {
-    "prestart": "npm install",
-    "start": "tsc && npm-run-all --parallel  watch lite",
+    "prestart": "npm install && typings install",
+    "start": "npm-run-all --parallel  watch lite",
     "lite": "lite-server",
-    "postinstall": "typings install",
     "tsc": "tsc",
     "watch": "tsc -w",
     "typings": "typings"
