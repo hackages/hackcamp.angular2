@@ -1,0 +1,38 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "tsc && npm-run-all --parallel  watch lite",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "watch": "tsc -w",
+    "typings": "typings"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~2.0.1",
+    "@angular/compiler": "~2.0.1",
+    "@angular/core": "~2.0.1",
+    "@angular/forms": "~2.0.1",
+    "@angular/http": "~2.0.1",
+    "@angular/platform-browser": "~2.0.1",
+    "@angular/platform-browser-dynamic": "~2.0.1",
+    "@angular/router": "~3.0.1",
+    "@angular/upgrade": "~2.0.1",
+    "@ngrx/store": "^2.2.1",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.2",
+    "npm-run-all": "^3.1.0",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0"
+  }
+}
