@@ -1,0 +1,8 @@
+<section class="gallery">
+    <ul>
+      <a [href]="section.name | lowercase" class="section" *ngFor="let section of sections">
+          <img [src]="section.cover"/>
+          <div class="section_name">{{section.name}}</div>
+      </a> 
+    </ul>
+</section>

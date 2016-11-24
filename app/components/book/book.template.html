@@ -1,0 +1,7 @@
+<section class="gallery" [class.filter-is-visible]="!navClosed">
+    <ul>
+        <a href="book.title | lowercase"  ngFor="let book of books">
+            <img [src]="book.cover"/>
+        </a> 
+    </ul>
+</section>

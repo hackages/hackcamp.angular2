@@ -1,0 +1,17 @@
+<bs-header [appTitle]="title"></bs-header>
+
+<main class="main-content">
+    <!--Menu filters-->
+    <bs-menubar>
+        <bs-category [dataSource]="categories" [changeCategory]="changeCategory"></bs-category>
+    </bs-menubar>
+   
+    <!--Book Component-->
+    <bs-book [dataSource]="books" [navClosed]="navClosed"></bs-book>
+
+    <!--Sidebar navigation-->
+   <bs-sidebar
+    (sidebarHasBeenToggled)="toggleSidebar()"
+        (searchTermChanged)="search($event)"
+   ></bs-sidebar> 
+</main>
